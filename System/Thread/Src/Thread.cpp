@@ -6,6 +6,7 @@
  */
 
 #include "Thread.h"
+#include "task.h"
 
 
 #define DEFAULT_STACK_SIZE (1024)
@@ -47,7 +48,7 @@ Thread::Thread(const char* name, osPriority_t priority, uint32_t stack_size) {
 		.stack_size = stack_size,
 		.priority = (osPriority_t) priority,
 	};
-	this->handle = (osThreadId) osThreadNew(&__task_run, this, &thread_attributes);
+	this->handle = (osThreadId_t) osThreadNew(&__task_run, this, &thread_attributes);
 	this->name = name;
 }
 
@@ -59,7 +60,7 @@ void Thread::terminate() {
 	running = false;
 }
 
-osThreadId Thread::get_handle() {
+osThreadId_t Thread::get_handle() {
 	return handle;
 }
 

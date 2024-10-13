@@ -1,0 +1,10 @@
+../System/Thread/Src/Thread.cpp:14:6:void __task_run(void*)	24	static
+../System/Thread/Src/Thread.cpp:36:1:Thread::Thread(const char*)	16	static
+../System/Thread/Src/Thread.cpp:39:1:Thread::Thread(const char*, osPriority_t)	24	static
+../System/Thread/Src/Thread.cpp:42:1:Thread::Thread(const char*, uint32_t)	24	static
+../System/Thread/Src/Thread.cpp:45:1:Thread::Thread(const char*, osPriority_t, uint32_t)	64	static
+../System/Thread/Src/Thread.cpp:55:6:bool Thread::is_running()	16	static
+../System/Thread/Src/Thread.cpp:59:6:void Thread::terminate()	16	static
+../System/Thread/Src/Thread.cpp:63:14:void* Thread::get_handle()	16	static
+../System/Thread/Src/Thread.cpp:67:6:void Thread::set_tick_delay(uint32_t)	16	static
+../System/Thread/Src/Thread.cpp:71:10:uint32_t Thread::get_tick_delay()	16	static

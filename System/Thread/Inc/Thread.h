@@ -1,5 +1,5 @@
 /*
- * Threads.h
+ * Thread.h
  *
  *  Created on: Oct 10, 2024
  *      Author: Ilyas Asmouki
@@ -27,13 +27,13 @@ public:
 	bool is_running();
 	void terminate();
 
-	osThreadId get_handle();
+	osThreadId_t get_handle();
 
 	void set_tick_delay(uint32_t ms);
 	uint32_t get_tick_delay();
 
 private:
-	osThreadId handle;
+	osThreadId_t handle;
 	const char* name;
 	bool running = true;
 	uint32_t delay;

@@ -53,6 +53,8 @@
 "./Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o"
 "./Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o"
 "./System/Core/Src/System.o"
+"./System/Thread/Src/PowerMonitor.o"
+"./System/Thread/Src/Thread.o"
 "./USB_Device/App/usb_device.o"
 "./USB_Device/App/usbd_cdc_if.o"
 "./USB_Device/App/usbd_desc.o"
