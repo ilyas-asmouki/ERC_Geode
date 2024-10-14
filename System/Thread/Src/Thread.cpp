@@ -1,5 +1,5 @@
 /*
- * Threads.cpp
+ * Thread.cpp
  *
  *  Created on: Oct 10, 2024
  *      Author: Ilyas Asmouki
