@@ -53,6 +53,8 @@ void PowerMonitor::init() {
 		// TODO: print that the device hasnt been initialized
 		terminate();
 	}
+
+	//loop();
 }
 
 void PowerMonitor::loop() {
@@ -72,7 +74,7 @@ float PowerMonitor::read_bus_voltage() {
 }
 
 float PowerMonitor::read_current() {
-	return 1.0f * CURRENT_LSB * get(INA239_CURRENT_REG); // [A]
+	return (float) CURRENT_LSB * get(INA239_CURRENT_REG); // [A]
 }
 
 float PowerMonitor::read_power() {
@@ -80,6 +82,10 @@ float PowerMonitor::read_power() {
 	read(INA239_POWER_REG, (uint8_t*) &raw_power, 3);
 	return 0.2f * CURRENT_LSB * raw_power;
 }
+
+//x * 2**n == x << n
+//
+//generally, you can use x * y = x << ilog2(y);
 
 float PowerMonitor::read_temperature() {
 	return 125e-3f * ((int16_t) get(INA239_DIETEMP_REG) >> INA239_DIETEMP_BIT); // [deg C]
@@ -124,6 +130,7 @@ bool PowerMonitor::read(uint8_t reg, uint8_t* data, uint8_t size) {
 
 	return status == HAL_OK;
 }
+
 
 
 
