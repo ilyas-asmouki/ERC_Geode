@@ -5,12 +5,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../System/Core/Src/Communication.cpp \
 ../System/Core/Src/System.cpp 
 
 OBJS += \
+./System/Core/Src/Communication.o \
 ./System/Core/Src/System.o 
 
 CPP_DEPS += \
+./System/Core/Src/Communication.d \
 ./System/Core/Src/System.d 
 
 
@@ -21,7 +24,7 @@ System/Core/Src/%.o System/Core/Src/%.su System/Core/Src/%.cyclo: ../System/Core
 clean: clean-System-2f-Core-2f-Src
 
 clean-System-2f-Core-2f-Src:
-	-$(RM) ./System/Core/Src/System.cyclo ./System/Core/Src/System.d ./System/Core/Src/System.o ./System/Core/Src/System.su
+	-$(RM) ./System/Core/Src/Communication.cyclo ./System/Core/Src/Communication.d ./System/Core/Src/Communication.o ./System/Core/Src/Communication.su ./System/Core/Src/System.cyclo ./System/Core/Src/System.d ./System/Core/Src/System.o ./System/Core/Src/System.su
 
 .PHONY: clean-System-2f-Core-2f-Src
 

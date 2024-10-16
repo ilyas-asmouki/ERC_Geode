@@ -1,13 +1,5 @@
-Core/Src/freertos.o: ../Core/Src/freertos.cpp \
- ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
- ../Core/Inc/FreeRTOSConfig.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+System/Core/Src/Communication.o: ../System/Core/Src/Communication.cpp \
+ ../System/Core/Inc/Communication.h ../Core/Inc/fdcan.h \
  ../Core/Inc/main.h ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h \
  ../Core/Inc/stm32g4xx_hal_conf.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h \
@@ -43,19 +35,9 @@ Core/Src/freertos.o: ../Core/Src/freertos.cpp \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h \
- ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
- ../System/Core/Inc/System.h ../System/Core/Inc/Communication.h \
- ../Core/Inc/fdcan.h ../Core/Inc/main.h
-../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
-../Core/Inc/FreeRTOSConfig.h:
-../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
-../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h:
-../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h:
-../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h:
-../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
-../Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h
+../System/Core/Inc/Communication.h:
+../Core/Inc/fdcan.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
 ../Core/Inc/stm32g4xx_hal_conf.h:
@@ -93,8 +75,3 @@ Core/Src/freertos.o: ../Core/Src/freertos.cpp \
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h:
-../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
-../System/Core/Inc/System.h:
-../System/Core/Inc/Communication.h:
-../Core/Inc/fdcan.h:
-../Core/Inc/main.h:

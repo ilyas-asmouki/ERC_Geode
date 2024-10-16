@@ -33,6 +33,7 @@ extern "C" {
 //#include "roottask.h"
 //#include "test.h"
 #include "System.h"
+#include "Communication.h"
 
 
 /* USER CODE END Includes */
@@ -82,6 +83,8 @@ void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 extern void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
 	System::init();
+	FDCANTerminal terminal(&hfdcan1);
+	terminal.init();
 
   /* USER CODE END Init */
 
