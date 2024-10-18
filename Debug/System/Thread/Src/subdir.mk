@@ -5,14 +5,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../System/Thread/Src/FDCANTerminal.cpp \
 ../System/Thread/Src/PowerMonitor.cpp \
 ../System/Thread/Src/Thread.cpp 
 
 OBJS += \
+./System/Thread/Src/FDCANTerminal.o \
 ./System/Thread/Src/PowerMonitor.o \
 ./System/Thread/Src/Thread.o 
 
 CPP_DEPS += \
+./System/Thread/Src/FDCANTerminal.d \
 ./System/Thread/Src/PowerMonitor.d \
 ./System/Thread/Src/Thread.d 
 
@@ -24,7 +27,7 @@ System/Thread/Src/%.o System/Thread/Src/%.su System/Thread/Src/%.cyclo: ../Syste
 clean: clean-System-2f-Thread-2f-Src
 
 clean-System-2f-Thread-2f-Src:
-	-$(RM) ./System/Thread/Src/PowerMonitor.cyclo ./System/Thread/Src/PowerMonitor.d ./System/Thread/Src/PowerMonitor.o ./System/Thread/Src/PowerMonitor.su ./System/Thread/Src/Thread.cyclo ./System/Thread/Src/Thread.d ./System/Thread/Src/Thread.o ./System/Thread/Src/Thread.su
+	-$(RM) ./System/Thread/Src/FDCANTerminal.cyclo ./System/Thread/Src/FDCANTerminal.d ./System/Thread/Src/FDCANTerminal.o ./System/Thread/Src/FDCANTerminal.su ./System/Thread/Src/PowerMonitor.cyclo ./System/Thread/Src/PowerMonitor.d ./System/Thread/Src/PowerMonitor.o ./System/Thread/Src/PowerMonitor.su ./System/Thread/Src/Thread.cyclo ./System/Thread/Src/Thread.d ./System/Thread/Src/Thread.o ./System/Thread/Src/Thread.su
 
 .PHONY: clean-System-2f-Thread-2f-Src
 

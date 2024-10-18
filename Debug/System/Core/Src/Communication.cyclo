@@ -1,7 +1,1 @@
-../System/Core/Inc/Communication.h:21:9:Command to_enum(const char*)	2
-../System/Core/Src/Communication.cpp:11:1:FDCANTerminal::FDCANTerminal(FDCAN_HandleTypeDef*)	1
-../System/Core/Src/Communication.cpp:14:6:void FDCANTerminal::init()	1
-../System/Core/Src/Communication.cpp:27:6:void FDCANTerminal::process()	2
-../System/Core/Src/Communication.cpp:39:6:void FDCANTerminal::send_response(const char*)	1
-../System/Core/Src/Communication.cpp:57:6:void FDCANTerminal::handle_message(const char*)	1
-../System/Core/Src/Communication.cpp:65:6:void FDCANTerminal::execute_command(Command)	2
+../System/Core/Src/Communication.cpp:14:6:static void Communication::init()	3

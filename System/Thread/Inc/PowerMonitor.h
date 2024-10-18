@@ -26,8 +26,8 @@ typedef struct {
 class PowerMonitor : public Thread {
 public:
 	PowerMonitor(SPI_HandleTypeDef* spi);
-	void init();
-	void loop();
+	void init() override;
+	void loop() override;
 
 	float read_shunt_voltage();
 	float read_bus_voltage();

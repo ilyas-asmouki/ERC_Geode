@@ -1,5 +1,5 @@
-System/Core/Src/Communication.o: ../System/Core/Src/Communication.cpp \
- ../System/Core/Inc/Communication.h ../System/Thread/Inc/Thread.h \
+System/Thread/Src/FDCANTerminal.o: ../System/Thread/Src/FDCANTerminal.cpp \
+ ../System/Thread/Inc/FDCANTerminal.h ../System/Thread/Inc/Thread.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../Core/Inc/FreeRTOSConfig.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
@@ -8,7 +8,6 @@ System/Core/Src/Communication.o: ../System/Core/Src/Communication.cpp \
  ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
- ../System/Thread/Inc/FDCANTerminal.h ../System/Thread/Inc/Thread.h \
  ../Core/Inc/fdcan.h ../Core/Inc/main.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h \
  ../Core/Inc/stm32g4xx_hal_conf.h \
@@ -46,7 +45,7 @@ System/Core/Src/Communication.o: ../System/Core/Src/Communication.cpp \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h
-../System/Core/Inc/Communication.h:
+../System/Thread/Inc/FDCANTerminal.h:
 ../System/Thread/Inc/Thread.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:
@@ -56,8 +55,6 @@ System/Core/Src/Communication.o: ../System/Core/Src/Communication.cpp \
 ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
-../System/Thread/Inc/FDCANTerminal.h:
-../System/Thread/Inc/Thread.h:
 ../Core/Inc/fdcan.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:

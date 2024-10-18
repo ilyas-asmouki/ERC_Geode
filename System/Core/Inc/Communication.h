@@ -1,40 +1,18 @@
 /*
  * Communication.h
  *
- *  Created on: Oct 16, 2024
+ *  Created on: Oct 18, 2024
  *      Author: Ilyas Asmouki
  */
 
-#ifndef COMMUNICATION_H_
-#define COMMUNICATION_H_
+#ifndef SYSTEM_CORE_INC_COMMUNICATION_H_
+#define SYSTEM_CORE_INC_COMMUNICATION_H_
 
 
-#include "fdcan.h"
-#include "stm32g4xx_hal_fdcan.h"
-#include <cstring>
-
-typedef enum {
-	STATUS = 0,
-	UNKNOWN
-} Command;
-
-Command to_enum(const char* command) {
-	if (std::strcmp(command, "STATUS") == 0) return STATUS;
-	else return UNKNOWN;
-}
-
-class FDCANTerminal {
+class Communication {
 public:
-	FDCANTerminal(FDCAN_HandleTypeDef* fdcanHandle);
-    void init();
-    void process();
-
-private:
-    FDCAN_HandleTypeDef *fdcan;
-    void send_response(const char* response);
-    void handle_message(const char* message);
-    void execute_command(Command command);
+	static void init(void);
 };
 
 
-#endif /* COMMUNICATION_H_ */
+#endif /* SYSTEM_CORE_INC_COMMUNICATION_H_ */

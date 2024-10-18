@@ -8,10 +8,6 @@
 #include "System.h"
 #include "Thread.h"
 #include "PowerMonitor.h"
-#include <stdint.h>
-#include <cstdio>
-#include "cmsis_os2.h"
-#include "stm32g4xx_hal.h"
 
 
 void System::init(void) {

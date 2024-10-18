@@ -1,3 +1,2 @@
-../System/Core/Inc/Communication.h:21:9:Command to_enum(const char*)	16	static
-../Core/Src/freertos.cpp:83:13:void MX_FREERTOS_Init()	16	static
+../Core/Src/freertos.cpp:83:13:void MX_FREERTOS_Init()	8	static
 ../Core/Src/freertos.cpp:136:6:void StartDefaultTask(void*)	16	static
